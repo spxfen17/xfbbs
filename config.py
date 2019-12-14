@@ -1,0 +1,41 @@
+import os
+SECRET_KEY = os.urandom(24)
+
+
+
+USERNAME = 'root'
+PASSWORD = '123456'
+HOST = '127.0.0.1'
+PORT = '3306'
+DATABASE = 'xfbbs_demo'
+SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8".format(USERNAME,PASSWORD,HOST,PORT,DATABASE)
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+CMS_USER_ID = 'ASDCC'
+FRONT_USER_ID = 'FDSJK'
+
+MAIL_SERVER = "smtp.qq.com"
+MAIL_PORT = "587"
+MAIL_USE_TLS = True
+# MAIL_USE_SSL : 默认为 False
+# MAIL_DEBUG : 默认为 app.debug
+MAIL_USERNAME = "461928044@qq.com"
+MAIL_PASSWORD = "ucacxmgoyxyvbged"
+MAIL_DEFAULT_SENDER = "461928044@qq.com"
+
+
+#阿里大于相关配置
+ALIDAYU_APP_KEY = '28097479'
+ALIDAYU_APP_SECRET ='f9220ebbbba50992476b347da03dfffe'
+ALIDAYU_SIGN_NAME = 'BBS论坛'
+ALIDAYU_TEMPLATE_CODE = 'SMS_176537219'
+
+#ueditor相关配置
+UEDITOR_UPLOAD_TO_QINIU = True
+UEDITOR_QINIU_ACCESS_KEY = "L5ghsvMRi2IO_enJO2DB-jIUWqC-2iX9kVcQHOXl"
+UEDITOR_QINIU_SECRET_KEY = "Vv4iWYAA0DffsCJSzpmD4SN-bFKqzX84TwTsXPEt"
+UEDITOR_QINIU_BUCKET_NAME = "xfbbs"
+UEDITOR_QINIU_DOMAIN = "http://q0ugnvvdq.bkt.clouddn.com/"
+
+#flaks-paginate的相关配置
+PER_PAGE = 10
